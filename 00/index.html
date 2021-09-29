@@ -5,15 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-<style>
-    body{background: black;}
-</style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
     
 
-    <script src="classValidandoCPF.js"></script>
+<section class="container">
+
+    <h1>Validarndo Formulario</h1>
+    
+    <form action="/" method="post" class="formulario">
+        
+        <label for="">Nome</label>
+        <input type="text" class="nome validar">
+
+        <label for="">Sore Nome</label>
+        <input type="text" class="sobre-nome validar">
+
+        <label for="">CPF</label>
+        <input type="text" class="cpf validar">
+
+
+        <label for="">usuario</label>
+        <input type="text" class="usuario validar">
+
+        <label for="">Senhha</label>
+        <input type="text" class="senha validar">
+
+        <label for="">Repetir senha</label>
+        <input type="text" class="repetir-senha validar">
+
+        <button type="submit">Envio</button>
+
+    </form>
+    
+</section>
+    <script src="classValidarndoCPF.js"></script>
+    <script src="formularioMan.js"></script>
 </body>
 </html>
