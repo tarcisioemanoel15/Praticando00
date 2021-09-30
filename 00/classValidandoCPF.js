@@ -1,4 +1,4 @@
-class validaCPF {
+class ValidaCPF {
     constructor(enviocpf){
         Object.defineProperty(this, 'cpfLimpo', {
             enumerable: true,
@@ -20,8 +20,8 @@ class validaCPF {
 
     geraDigito(){
         const cpfparcial = this.cpfLimpo.slice(0, -2);
-        const digito1 = validaCPF.geranoDigito(cpfparcial);
-        const digito2 = validaCPF.geranoDigito(cpfparcial + digito1);
+        const digito1 = ValidaCPF.geranoDigito(cpfparcial);
+        const digito2 = ValidaCPF.geranoDigito(cpfparcial + digito1);
         this.novocpf = cpfparcial + digito1 + digito2;
     }
 
@@ -38,11 +38,6 @@ class validaCPF {
     }
 }
 
-const cpf = new validaCPF('211.111.111-20');
-console.log(cpf.valida());
+// const cpf = new ValidaCPF('211.111.111-20');
+// console.log(cpf.valida())
 
-if(cpf.valida()){
-    console.log('verdadeiro')
-}else{
-    console.log('falso');
-}
