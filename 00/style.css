@@ -17,15 +17,20 @@ h1{
     justify-content: center;
     background: darkseagreen;
     max-width: 800px;
-    height: 400px;
+    height: 600px;
     padding: 20px ;
     margin: auto ;
 }
 
 label{
+    
     margin: 9px;
 }
 
 button{
     margin: 9px;
+}
+
+.error-Text{
+    color: red;
 }

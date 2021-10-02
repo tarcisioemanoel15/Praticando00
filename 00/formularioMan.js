@@ -67,7 +67,7 @@ class Validaformulario{
            }
 
            if(campo.classList.contains('usuario')){
-               this.usuariovalido(campo);
+               if(!this.usuariovalido(campo)) valid = false;
            }
 
          
