@@ -1,32 +1,33 @@
+
 function rand(max, min){
     max *= 1000;
     min *= 1000;
-    return Math.floor(Math.random() * (max - min) + min);    
+    return Math.floor(Math.random() * (max - min) + min);
 }
 
-function asdf(msg, temp){
-
-    return new Promise((resove, reject) => {
-        if(typeof msg !== 'string') reject('Error')
-
+function esperaAI(msg, tempo){
+    return new Promise((aceita, regeita) => {
+        if(typeof msg !== 'string') regeita('ERROR');
         setTimeout(() => {
-            resove(msg);
-        }, temp)
+            aceita(msg);
+        }, tempo)
     })
 }
 
-asdf('a', rand(1, 3))
-.then(a1 => {
-    console.log(a1)
-   return asdf('b', rand(1, 3));
+esperaAI('f1', rand(1, 3))
+.then(f1 => {
+    console.log(f1)
+    return esperaAI('f2', rand(1, 3));
 })
-.then(b2 => {
-    console.log(b2)
-    return asdf(5, rand(1, 3))
+.then(f2 => {
+    console.log(f2);
+    return esperaAI('f3', rand(1, 3));
 })
-.then(C3 => {
-    console.log(C3)
+.then(f3 => {
+    console.log(f3);
 })
-.catch(c3 => {
-    console.log(c3);
+
+
+.catch(f12 => {
+    console.log(f12);
 })
