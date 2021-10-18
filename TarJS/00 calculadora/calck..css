@@ -1,0 +1,107 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    background: rgb(102, 102, 102);
+    text-align: -webkit-center;
+}
+
+section{   
+    max-width: 700px;
+    height: 750px;
+    background: linear-gradient(rgb(0, 0, 8), rgb(1, 1, 70), rgb(112, 2, 2), rgb(2, 71, 68));
+    border-radius: 50%;
+}
+
+h1{
+    color: white;
+    font-size: 30px;
+}
+
+.container{
+    max-width: 500px;
+    height: 550px;
+    background: brown;
+    padding: 40px;
+
+
+    position: relative;
+    background: rgba(250, 250, 250, 0.1);
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    border-radius: 50%;
+}
+
+.calculadora{
+    max-width: 350px;
+    height: 450px;
+    background: rgb(211, 207, 207);
+    border-radius: 10%;
+    padding: 40px;
+
+
+    position: relative;
+    background: rgb(162, 11, 11);
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    /* border-radius: 50%; */
+}
+
+input{
+    font-size: 25px;
+    border-radius: 5%;
+
+}
+
+table{
+    display: contents;
+    white-space: break-spaces;
+    text-align: -webkit-center;   
+    padding: 20px;
+    
+}
+
+
+
+
+.display{
+    width: 343px;
+    height: 50px;    
+    font-size: 2em;
+    text-align: right;
+}
+
+
+.btn{
+    display: block;
+    outline: double;
+
+    width: 65px;
+    height: 30px;
+    font-size: 1em;
+    -webkit-text-stroke: medium;
+    
+    margin: 10px;
+   border: none;
+    background: #dfdfdf;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #9e9e9e;
+}
+
+.btnn{
+    background: yellow;
+}
+
+
+    @media screen and (max-width: 500px) {
+
+        section{width:500px; height: 500px; border-radius: 0;}
+        .container{max-width: 400px; height: 400px  }        
+
+        table{padding: 1px; white-space: normal;}
+        .calculadora{ max-width: 200px; height: 300px;}
+        .display{ width: 200px; }
+        .btn{ width: 30px; }
+            
+    }
+    

@@ -1,0 +1,29 @@
+body{background: black; color: red;}
+section{
+    text-align: -webkit-center;
+    /* white-space: break-spaces; */
+
+}
+.container{background:linear-gradient(rgb(0, 77, 243),rgb(22, 93, 245),rgb(0, 77, 243),rgb(57, 110, 224),rgb(98, 135, 216))}
+.cro{
+    width: 400px;
+    height: 400px;
+    background: rgba(78, 73, 73, 0.207);
+    border-radius: 50%;
+    border: solid rgba(67, 65, 65, 0.35);
+    
+}
+h1{font-size: 60px; text-align: center; margin-top: 50px;}
+p{font-size: 60px;}
+button{font-size: 25px; border-radius: 10px;}
+.pr{ display: inline-table; margin-bottom: auto;}
+
+.cor1{color: chartreuse;}
+.cor2{color:gold ;}
+
+@media screen and (max-width: 430px) {
+    .cro{width: 200px; height: 200px;}   
+ p{font-size: 30px;}
+    button{font-size: 15px;}
+
+}

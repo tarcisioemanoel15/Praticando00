@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+
+    <style>
+        body{
+            padding-top: 15%;
+            text-align: center;
+            background: black;
+            color: red;
+        }
+        section{
+            width: 100%;
+            height: 100px;
+            background: yellow;
+            padding: 9px;
+        }
+
+        .tr{background: blue;}
+        .t{background: rgb(0, 255, 106);}
+    </style>
+</head>
+<body>
+    <section class="section">
+        <h1 class="contador">00 : 00 : 00</h1>
+        <h2> <button class="iniciar">iniciar</button> <button class="pausar">pausar</button> <button class="zerar">zerar</button></h2>
+    </section>
+    
+
+
+ <!-- <script >
+    function cronometro(){
+        let contador = document.querySelector('.contador');
+        let c = document.querySelector('.section');
+
+        function seg(segundos){
+            let data = new Date(segundos * 1000);
+            return data.toLocaleTimeString('pt-BR', {
+                hour12: false,
+                timeZone: 'UTC'
+            })
+        }
+        console.log(seg(10));
+    
+        let segundos = 0;
+        let timer;
+
+        function contando() {
+            timer = setInterval(() => {
+                segundos++;
+                contador.innerHTML = (seg(segundos));
+            }, 1000);
+        } 
+
+        document.addEventListener('click', e => {
+            let el = e.target;
+
+            if(el.classList.contains('iniciar')){
+                c.classList.add('tr');
+                c.classList.remove('t');
+                clearInterval(timer);
+                contando(segundos);
+            }
+    
+            if(el.classList.contains('pausar')){
+                clearInterval(timer);
+                c.classList.remove('tr');
+                c.classList.add('t');
+            }
+            
+            if(el.classList.contains('zerar')){
+                c.classList.remove('tr');
+                c.classList.remove('t');
+                
+                segundos = 0;
+                contador.innerHTML = '00:00:00';
+            }
+        }) 
+    }
+    cronometro();
+    </script> -->
+        
+    
+        <script src="cro.js"></script>
+    
+    
+</body>
+</html>
