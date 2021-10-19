@@ -1,0 +1,26 @@
+body{margin-bottom: 100%; background: linear-gradient(rgb(0, 255, 85), rgb(154, 8, 238));}
+
+h1{ color: rgb(87, 5, 119); font-size: 80px; text-align: center}
+
+p{
+    width: 846px;
+    align-content: center;
+    font-size: 200px;
+    background: rgba(173, 209, 10, 0.152);
+    border: solid;
+    text-align: center;
+    height: 237px;
+    border-radius: 96px;
+    margin-inline: auto;
+}
+    
+
+
+@media screen and (max-width : 890px) {
+    p{font-size: 110px; width: 500px; height: 150px; }
+}
+
+@media screen AND (max-width: 540px) {
+    h1{font-size: 40px;}
+    p{font-size: 70px; width: 320px; height: 80px; }
+}
