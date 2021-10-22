@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+
+    
+    <style>
+        body{ background: linear-gradient(rgb(1, 1, 70), rgb(17, 140, 223), rgb(2, 71, 68)); text-align: center; padding: 50px;}
+        .tarefa{width: 50%; height: 10px; background: rgb(168, 168, 167); display: inline-block;}
+        .container {background: rgb(90, 89, 84);}
+        img{padding: 50px;}
+        li{color: blanchedalmond;margin-top: 30px; list-style: none;}
+
+
+        @media screen and (max-width: 550px) {
+           
+            .input-tarefa{ width: 110px;}
+            .btn-tarefa{width: 45px;}
+            img{width: 50px; height: 50px;}
+        }
+
+
+
+    </style>
+
+</head>
+
+
+
+
+
+<body>
+    
+<section class="container">
+
+    <h1>Bloco de notas</h1>
+
+    <p>
+        <input type="text" class="input-tarefa">
+        <button class="btn-tarefa"> add </button>
+    </p>
+
+    <ul class="tarefa"></ul>
+
+</section>
+
+ <p>Salve seus lembretes e apague quando quiser</p> 
+
+
+<img style="transition: background-color 300ms; border-radius: 50%;" src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/tropical-fish_1f420.png">
+
+<script src="bloco.js"></script>
+
+</body>
+</html>
