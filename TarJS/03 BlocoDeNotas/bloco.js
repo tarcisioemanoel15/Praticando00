@@ -40,9 +40,12 @@ displayTarefas.addEventListener('keypress', e => {
 }); 
     
 document.addEventListener('click', e => {
-    salvarTarefa()
     const el = e.target;
-    if(el.classList.contains('apagar')){el.parentElement.remove()}
+    if(el.classList.contains('apagar')){
+        el.parentElement.remove()
+        salvarTarefa()
+    
+    }
 });
 
 
