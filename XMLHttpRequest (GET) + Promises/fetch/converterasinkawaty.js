@@ -10,6 +10,7 @@ document.addEventListener('click', e => {
 })
 
 async function carrega(el){
+    
     try{
 
         const href = el.getAttribute('href');
